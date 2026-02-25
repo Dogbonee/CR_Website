@@ -13,29 +13,29 @@ export default function Page() {
         <>
             <Navbar />
             <ScrollElement name="home">
-            <motion.section
-                id="home"
-                className="scroll-mt-24"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 1 }}
-            >
-                <Home/>
-            </motion.section>
+                <motion.section
+                    id="home"
+                    className="scroll-mt-24"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 1 }}
+                >
+                    <Home/>
+                </motion.section>
             </ScrollElement>
 
             <ScrollElement name="projects">
-            <motion.section
-                id="projects"
-                className="scroll-mt-24"
-                initial={{ opacity: 0, y: 75 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.3 }}
-                transition={{ duration: 0.8, ease: "easeOut" }}
-            >
-                <Projects/>
-            </motion.section>
-                </ScrollElement>
+                <motion.section
+                    id="projects"
+                    className="scroll-mt-24"
+                    initial={{ opacity: 0, y: 75 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, amount: "some" }}
+                    transition={{ duration: 0.8, ease: "easeOut" }}
+                >
+                    <Projects/>
+                </motion.section>
+            </ScrollElement>
 
             <ScrollElement name="skills">
                 <motion.section
@@ -43,12 +43,13 @@ export default function Page() {
                     className="scroll-mt-24"
                     initial={{ opacity: 0, y: 75 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true, amount: 0.3 }}
+                    viewport={{ once: true, amount: "some" }}
                     transition={{ duration: 0.8, ease: "easeOut" }}
                 >
                     <Skills/>
                 </motion.section>
             </ScrollElement>
+
             <Footer/>
         </>
     );
