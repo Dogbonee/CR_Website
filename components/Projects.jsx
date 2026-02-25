@@ -26,8 +26,8 @@ const cardVariants = {
 
 export default function Projects() {
     return (
-        <div className="container mx-auto mb-20 py-16 bg-muted/40">
-            <h1 className="text-5xl font-bold p-10">Projects</h1>
+        <div className="container mx-auto mb-20 py-16 px-4 md:px-8 bg-muted/40">
+            <h1 className="text-4xl md:text-5xl font-bold p-4 md:p-10">Projects</h1>
 
             <motion.div
                 variants={containerVariants}
@@ -37,7 +37,7 @@ export default function Projects() {
             >
 
                 <motion.div variants={cardVariants}>
-                    <Card className="max-w-full bg-transparent m-10">
+                    <Card className="max-w-full bg-transparent my-8 lg:m-10">
                         <CardHeader className="text-2xl">
                             FeederAce
                         </CardHeader>
@@ -52,14 +52,14 @@ export default function Projects() {
                 </motion.div>
 
                 <motion.div variants={cardVariants}>
-                    <div className="flex flex-col lg:flex-row items-center gap-30 m-10">
-                        <div className="flex flex-col lg:flex-row items-center gap-5 m-0">
+                    <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12 my-8 lg:m-10">
+                        <div className="flex flex-col lg:flex-row items-center justify-center gap-5 m-0 w-full lg:w-2/5">
                             <video
                                 autoPlay
                                 loop
                                 muted
                                 playsInline
-                                className="w-full lg:w-1/2 rounded-lg"
+                                className="w-4/5 sm:w-1/2 lg:w-1/2 lg:max-w-55 rounded-lg shadow-lg"
                             >
                                 <source src="/videos/cowbell_demo_1.mp4" type="video/mp4" />
                             </video>
@@ -68,12 +68,12 @@ export default function Projects() {
                                 loop
                                 muted
                                 playsInline
-                                className="w-full lg:w-1/2 rounded-lg"
+                                className="w-4/5 sm:w-1/2 lg:w-1/2 lg:max-w-55 rounded-lg shadow-lg"
                             >
                                 <source src="/videos/cowbell_demo_2.mp4" type="video/mp4" />
                             </video>
                         </div>
-                        <Card className="max-w-full bg-transparent m-0">
+                        <Card className="w-full lg:w-3/5 bg-transparent m-0">
                             <CardHeader className="text-2xl">
                                 Cowbell
                             </CardHeader>
@@ -90,8 +90,8 @@ export default function Projects() {
 
 
                 <motion.div variants={cardVariants}>
-                    <div className="flex flex-col lg:flex-row items-center gap-30 m-10">
-                        <Card className="w-full lg:w-2/3 bg-transparent m-0">
+                    <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12 my-8 lg:m-10">
+                        <Card className="w-full lg:w-2/3 bg-transparent m-0 order-2 lg:order-1">
                             <CardHeader className="text-2xl flex flex-row justify-between items-center">
                                 <span>Dualie</span>
                                 <Link
@@ -114,7 +114,7 @@ export default function Projects() {
                             loop
                             muted
                             playsInline
-                            className="w-full lg:w-1/3 rounded-lg"
+                            className="w-full lg:w-1/3 rounded-lg order-1 lg:order-2"
                         >
                             <source src="/videos/dualie_demo.mp4" type="video/mp4" />
                         </video>
@@ -122,7 +122,7 @@ export default function Projects() {
                 </motion.div>
 
                 <motion.div variants={cardVariants}>
-                    <div className="flex flex-col lg:flex-row items-center gap-30 m-10">
+                    <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12 my-8 lg:m-10">
                         <video
                             autoPlay
                             loop

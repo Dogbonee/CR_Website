@@ -20,10 +20,10 @@ export default function Navbar() {
                         height={128}
                         className="rounded-xl"
                     />
-                    <span>Caleb Rickenbach</span>
+                    <span className="hidden sm:inline-block">Caleb Rickenbach</span>
                 </ScrollLink>
 
-                <div className="absolute left-1/2 -translate-x-1/2">
+                <div className="hidden md:block absolute left-1/2 -translate-x-1/2">
                     <nav>
                         <ul className="flex gap-8 text-sm font-medium text-muted-foreground ">
                             <li className="hover:text-primary transition-colors cursor-pointer">
