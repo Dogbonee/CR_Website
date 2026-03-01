@@ -1,4 +1,6 @@
-import {CowbellCard, FeederAceCard} from "./ProjectCard";
+import AppProjectCard from "./ProjectCard";
+import CowbellIcon from "../assets/cowbell_rounded.png"
+import FeederAceIcon from "../assets/feederace_rounded.png"
 
 export default function Home() {
     return (
@@ -13,8 +15,22 @@ export default function Home() {
             </div>
 
             <div className="flex flex-col gap-6 w-full md:w-1/3 items-center md:items-end">
-                <CowbellCard/>
-                <FeederAceCard/>
+                <AppProjectCard
+                    icon={CowbellIcon}
+                    title="Cowbell"
+                    description="An easy to use tool that makes herd management and task tracking easy for ranchers and others in the agricultural field."
+                    delayMS="250"
+                    iosLink="https://apps.apple.com/ca/app/cowbell-herd-management/id6757620220"
+                    androidLink="https://play.google.com/store/apps/details?id=com.dogbonee.cowbell&hl=en_US"
+                />
+                <AppProjectCard
+                    icon={FeederAceIcon}
+                    title="FeederAce"
+                    description="A better way to control agricultural equipment such as feeders though the use of an intuitive controller, built with ease-of-use and affordability in mind."
+                    delayMS="750"
+                    iosLink="https://apps.apple.com/us/app/feederace/id6757622878"
+                    androidLink="https://play.google.com/store/apps/details?id=com.dogbonee.feederace&hl=en_US"
+                />
             </div>
         </div>
     );

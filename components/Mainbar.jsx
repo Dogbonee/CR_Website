@@ -11,7 +11,7 @@ export default function Navbar() {
                     smooth={true}
                     duration={500}
                     offset={-80}
-                    className="text-xl font-bold font-mono tracking-tight flex items-center gap-0 text-foreground cursor-pointer"
+                    className="text-xl font-bold font-mono tracking-tight flex items-center text-foreground cursor-pointer"
                 >
                     <Image
                         src="/dogbonee_logo.svg"

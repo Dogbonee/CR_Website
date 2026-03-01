@@ -53,7 +53,7 @@ export default function Projects() {
 
                 <motion.div variants={cardVariants}>
                     <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12 my-8 lg:m-10">
-                        <div className="flex flex-col lg:flex-row items-center justify-center gap-5 m-0 w-full lg:w-2/5">
+                        <div className="flex flex-col lg:flex-row items-center justify-center gap-5 w-full lg:w-2/5">
                             <video
                                 autoPlay
                                 loop
@@ -73,7 +73,7 @@ export default function Projects() {
                                 <source src="/videos/cowbell_demo_2.mp4" type="video/mp4" />
                             </video>
                         </div>
-                        <Card className="w-full lg:w-3/5 bg-transparent m-0">
+                        <Card className="w-full lg:w-3/5 bg-transparent ">
                             <CardHeader className="text-2xl">
                                 Cowbell
                             </CardHeader>
@@ -91,8 +91,8 @@ export default function Projects() {
 
                 <motion.div variants={cardVariants}>
                     <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12 my-8 lg:m-10">
-                        <Card className="w-full lg:w-2/3 bg-transparent m-0 order-2 lg:order-1">
-                            <CardHeader className="text-2xl flex flex-row justify-between items-center">
+                        <Card className="w-full lg:w-2/3 bg-transparent  order-2 lg:order-1">
+                            <CardHeader className="text-2xl flex justify-between items-center">
                                 <span>Dualie</span>
                                 <Link
                                     href="https://github.com/Dogbonee/Dualie"
@@ -133,7 +133,7 @@ export default function Projects() {
                             <source src="/videos/cmat_demo.mp4" type="video/mp4" />
                         </video>
 
-                        <Card className="w-full lg:w-2/3 bg-transparent m-0">
+                        <Card className="w-full lg:w-2/3 bg-transparent">
                             <CardHeader className="text-2xl flex flex-row justify-between items-center">
                                 <span>CMAT</span>
                                 <Link
